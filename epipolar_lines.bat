@@ -1,0 +1,1 @@
+start "" epipolar_lines/epipolar_lines.exe epipolar_lines/krem1.jpg epipolar_lines/krem2.jpg

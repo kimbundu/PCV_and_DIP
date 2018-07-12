@@ -1,0 +1,1 @@
+start "" calc_camera_parameters/calc_camera_parameters.exe calc_camera_parameters/points.jpg calc_camera_parameters/points.txt

@@ -1,0 +1,10 @@
+﻿  panorama_func.cpp
+c:\users\lenovo\source\repos\pcv_and_dip\panorama_creation\panorama_func.cpp(132): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\lenovo\source\repos\pcv_and_dip\panorama_creation\panorama_func.cpp(160): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\lenovo\source\repos\pcv_and_dip\panorama_creation\panorama_func.cpp(161): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\lenovo\source\repos\pcv_and_dip\panorama_creation\panorama_func.cpp(162): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\lenovo\source\repos\pcv_and_dip\panorama_creation\panorama_func.cpp(183): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\lenovo\source\repos\pcv_and_dip\panorama_creation\panorama_func.cpp(186): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\lenovo\source\repos\pcv_and_dip\panorama_creation\panorama_func.cpp(208): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\lenovo\source\repos\pcv_and_dip\panorama_creation\panorama_func.cpp(253): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  panorama_creation.vcxproj -> C:\Users\LENOVO\source\repos\pcv_and_dip\panorama_creation\x64\Debug\panorama_creation.exe

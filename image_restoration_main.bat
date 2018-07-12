@@ -1,0 +1,1 @@
+start "" image_restoration/image_restoration.exe restorate

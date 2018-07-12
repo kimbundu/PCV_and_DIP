@@ -1,0 +1,1 @@
+start "" object_in_3d/object_in_3d.exe object_in_3d/bh.dat object_in_3d/pp.dat
