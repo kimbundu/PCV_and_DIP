@@ -1,13 +1,12 @@
 ## Introduction
 
-Current project contains exercises in Photogrammetric Computer Vision, performed using OpenCV. 
-Since exe-files require arguments (paths of used images and files), the fastest way to launch is run the corresponding bat-file.
+Current project contains several exercises in Photogrammetric Computer Vision and Digital Image Analysis, performed in C++ using OpenCV library. In order to launch an exercise, run the corresponding bat-file, which specifies arguments required for executable of every exercise.
 
 ## Panorama creation
 
-Creation of a panorama from 3 images. User chooses 4 pairs of matching points for each pair of images, homography is calculated and applied.
+Creation of a panorama from 3 images. Three photos of the same planar object were taken using slightly different horizontal orientation of the camera. Program performs stitching of the left image to a center one and then stitching of the right image to the result. For every stitching operation user chooses 4 pairs of matching points. From image coordinates of these points homography in 2D is calculated and applied. Resulting image is stored on the disk.  
 Input files: ph_left.jpg, ph_mid.jpg, ph_rig.jpg  
-
+<img src = "/panorama_creation/ph_left.jpg" width = "300">
 Output file:  
 panorama.jpg  
 ![text](/panorama_creation/panorama.png "panorama")
@@ -42,7 +41,7 @@ krem1.jpg
 ![text](/epipolar_lines/krem1.JPG "krem1")  
 
 krem2.jpg  
-![text](/epipolar_lines/krem1.JPG "krem2")  
+![text](/epipolar_lines/krem2.JPG "krem2")  
 
 Output files:  
 fst.png  
