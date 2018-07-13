@@ -8,9 +8,9 @@
 <p>Creation of a panorama from 3 images. Three photos of the same planar object were taken using slightly different horizontal orientation of the camera. Program performs stitching of the left image to a center one and then stitching of the right image to the result. For every stitching operation user chooses 4 pairs of matching points. From image coordinates of these points homography in 2D is calculated and applied. Resulting image is stored on the disk. <br>
 Input files: <br>
 ph_left.jpg, ph_mid.jpg, ph_rig.jpg <br>
-<img src = "panorama_creation/ph_left.JPG">
-<img src = "panorama_creation/ph_mid.JPG">
-<img src = "panorama_creation/ph_right.JPG">
+<img src = "panorama_creation/ph_left.JPG" width = "300">
+<img src = "panorama_creation/ph_mid.JPG" width = "300">
+<img src = "panorama_creation/ph_rig.JPG" width = "300">
 Output file:  <br>
 panorama.jpg  <br>
 <img src = "panorama_creation/panorama.png">
@@ -22,7 +22,7 @@ panorama.jpg  <br>
 spacial coordinates of points on the object (cube) and finds these points on the image of this object. <br> 
 Input files: <br>  
 points.jpg  <br>
-<img src = "calc_camera_parameters/points.JPG"> <br>
+<img src = "calc_camera_parameters/points.JPG" width = "600"> <br>
 
 points.txt  <br>
 35 10 0  <br>
@@ -42,17 +42,17 @@ User chooses 8 pairs of matching points. Images with epipolar lines are shown an
 
 Input files:  <br>
 krem1.jpg  <br> 
-<img src = "epipolar_lines/krem1.JPG"> <br>
+<img src = "epipolar_lines/krem1.JPG" width = "600"> <br>
 
 krem2.jpg  <br>  
-<img src = "epipolar_lines/krem2.JPG"> <br>
+<img src = "epipolar_lines/krem2.JPG" width = "600"> <br>
 
 Output files:  <br>
 fst.png  <br> 
-<img src = "epipolar_lines/fst.png"> <br>
+<img src = "epipolar_lines/fst.png" width = "600"> <br>
 
 snd.png   <br>
-<img src = "epipolar_lines/snd.png"> <br>
+<img src = "epipolar_lines/snd.png" width = "600"> <br>
 </p>
 
 <h1>Object in 3D</h1>
