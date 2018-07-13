@@ -6,7 +6,7 @@ Current project contains several exercises in Photogrammetric Computer Vision an
 
 Creation of a panorama from 3 images. Three photos of the same planar object were taken using slightly different horizontal orientation of the camera. Program performs stitching of the left image to a center one and then stitching of the right image to the result. For every stitching operation user chooses 4 pairs of matching points. From image coordinates of these points homography in 2D is calculated and applied. Resulting image is stored on the disk.  
 Input files: ph_left.jpg, ph_mid.jpg, ph_rig.jpg  
-<img src = "/panorama_creation/ph_left.jpg">
+<img src = "panorama_creation/ph_left.jpg">
 Output file:  
 panorama.jpg  
 ![text](/panorama_creation/panorama.png "panorama")
