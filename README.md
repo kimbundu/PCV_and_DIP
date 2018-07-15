@@ -90,11 +90,11 @@ linear triangulation. To upgrade described reconstruction from projective to euc
 control points are used. Required 3D homography is calculated and applied to the whole 
 point cloud. Result is a point cloud in euclidean coordinates. Visualisation of the result shows that the point cloud represents a part of bust of Ludwig van Beethoven.  <br>
 Input files: <br>
-bh.dat, pp.dat  <br>
+bh.dat, pp.dat  <br> <br>
 Output files: <br>
-projectiveReconstruction.asc, euclidianReconstruction.asc  <br>
-Visualisation of the file euclidianReconstruction.asc: 
-<img src = "object_in_3D/beethoven.PNG" width = "600"> <br> <br>
+projectiveReconstruction.asc, euclidianReconstruction.asc  <br> <br>
+Visualisation of the file euclidianReconstruction.asc: <br>
+<img src = "object_in_3d/beethoven.PNG" width = "600"> <br> <br>
 </p>
 
 <h1>Image restoration</h1>
