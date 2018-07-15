@@ -19,7 +19,7 @@ panorama.jpg  <br>
 <h1>Calculation of interior and exterior camera parameters</h1>
 
 <p>Calculation of internal and external parameters of the image. User provides a txt-file with homogeneous 
-spacial coordinates of points on the object (cube) and finds these points on the image of this object. <br> <br>
+spacial coordinates of points on the object (cube) and clicks these points in the same order on the image of this object. <br> <br>
 
 Input files: <br>  
 points.txt  <br>
@@ -35,6 +35,27 @@ points.jpg  <br>
 
 Output file:  <br>
 result.txt  <br>
+Calibration matrix: <br>
+[3759.0095, -97.234528, 1662.9592;<br>
+ 0, 3715.8079, 1933.791;<br>
+ 0, 0, 0.99999994]<br>
+<br>
+Rotation matrix: <br>
+[-0.70572937, 0.70612901, -0.057687514;<br>
+ -0.54553491, -0.4896597, 0.68016547;<br>
+ 0.45203733, 0.51148331, 0.73078525]<br>
+<br>
+Principle distance:		3759.01<br>
+Skew:				88.5183<br>
+Aspect ratio:			0.988507<br>
+Principle point (x,y):		[1662.96, 1933.79]^T<br>
+<br>
+omega:	-34.9885<br>
+phi:	26.8745<br>
+kappa:	142.296<br>
+<br>
+external position:	[-71.3666, -72.8878, -66.2356]^T<br>
+
 
 <h1>Epipolar lines</h1>
 
@@ -67,11 +88,13 @@ Program calculates fundamental matrix and than sets projection matrix of one cam
 and calculates projection matrix of the second camera. Known projection matrices lead to 
 linear triangulation. To upgrade described reconstruction from projective to euclidean, 
 control points are used. Required 3D homography is calculated and applied to the whole 
-point cloud. Result is a point cloud in euclidean coordinates.  <br>
+point cloud. Result is a point cloud in euclidean coordinates. Visualisation of the result shows that the point cloud represents a part of bust of Ludwig van Beethoven.  <br>
 Input files: <br>
 bh.dat, pp.dat  <br>
 Output files: <br>
 projectiveReconstruction.asc, euclidianReconstruction.asc  <br>
+Visualisation of the file euclidianReconstruction.asc: 
+<img src = "object_in_3D/beethoven.PNG" width = "600"> <br> <br>
 </p>
 
 <h1>Image restoration</h1>
