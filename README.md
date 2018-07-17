@@ -100,7 +100,7 @@ Visualisation of the file euclidianReconstruction.asc: <br>
 <h1>Image restoration</h1>
 
 <h1>Unsharp masking</h1>
-<p>Current project performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where the lower part is result of unsharp masking:
+<p>Current project performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where the lower part is result of unsharp masking: <br>
 <img src = "unsharp_masking/USM.PNG" width = "256"> <br> <br>
 
 Current exercise performs unsharp masking of several different-sized images and measures processing time. Smoothing of the initial image is done by convolution. This fact is used to compare processing time of convolution of different-sized images (256х256, 400x400, 675x675 pixels) by different-sized kernels (5x5, 15x15, 25x25, 35x35 and 45x45) in spatial and in frequency domain. Results of unsharp masking applied for degraded images on the left are shown on the right side: <br>
