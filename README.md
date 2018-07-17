@@ -107,8 +107,8 @@ Current exercise performs unsharp masking of several different-sized images and 
 <img src = "unsharp_masking/result_images/degraded_orig_256.jpg" width = "256">
 <img src = "unsharp_masking/result_images/orig_256_USM_15x15_5_0.8_freqDom_enhanced.png" width = "256"> <br> <br>
 Dependency on processing time on image size and kernel size is shown on the following graphs: <br>
-<img src = "unsharp_masking/spat.PNG" width = "400">
-<img src = "unsharp_masking/freq.PNG" width = "400"> <br> <br>
+<img src = "unsharp_masking/spat.PNG" width = "600">
+<img src = "unsharp_masking/freq.PNG" width = "600"> <br> <br>
 As it can be seen on graphs, in case of spatial convolution processing time increases with growth of image size and with growth of kernel size. But in case of frequency convolution, processing time does not depend on kernel size, only on image size. The reason of such effect is that in spatial domain kernel size defines number of multiplications performed for convolution, but in frequency domain size of the kernel is increased to the image size, transformed to frequency domain and is multiplied with frequency domain representation of image in an element-by-element manner. Moreover, convolution in frequency domain is just much faster than in spatial domain even for similar image and kernel sizes. 
 
 <!--Unsharp masking is a technique of image processing which achieves effect of perception of image's greater sharpness by contrast magnification of edges. This effect is shown on the following picture:
