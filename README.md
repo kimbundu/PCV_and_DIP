@@ -100,13 +100,13 @@ Visualisation of the file euclidianReconstruction.asc: <br>
 <h1>Image restoration</h1>
 
 <h1>Unsharp masking</h1>
-<p>Current project performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where unsharp masking was applied to the lower part:
-<img src = "unsharp_masking/USM.PNG" width = "600"> <br> <br>
+<p>Current project performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where the lower part is result of unsharp masking:
+<img src = "unsharp_masking/USM.PNG" width = "256"> <br> <br>
 
 Current exercise performs unsharp masking of several different-sized images and measures processing time. Smoothing of the initial image is done by convolution. This fact is used to compare processing time of convolution of different-sized images (256х256, 400x400, 675x675 pixels) by different-sized kernels (5x5, 15x15, 25x25, 35x35 and 45x45) in spatial and in frequency domain. Results of unsharp masking applied for degraded images on the left are shown on the right side: <br>
-<img src = "unsharp_masking/result_images/degraded_orig_256.jpg" width = "400">
-<img src = "unsharp_masking/result_images/orig_256_USM_15x15_5_0.8_freqDom_enhanced.png" width = "400"> <br> <br>
-Dependency on processing time on image size and kernel size is shown on the following graphs:
+<img src = "unsharp_masking/result_images/degraded_orig_256.jpg" width = "256">
+<img src = "unsharp_masking/result_images/orig_256_USM_15x15_5_0.8_freqDom_enhanced.png" width = "256"> <br> <br>
+Dependency on processing time on image size and kernel size is shown on the following graphs: <br>
 <img src = "unsharp_masking/spat.PNG" width = "400">
 <img src = "unsharp_masking/freq.PNG" width = "400"> <br> <br>
 As it can be seen on graphs, in case of spatial convolution processing time increases with growth of image size and with growth of kernel size. But in case of frequency convolution, processing time does not depend on kernel size, only on image size. The reason of such effect is that in spatial domain kernel size defines number of multiplications performed for convolution, but in frequency domain size of the kernel is increased to the image size, transformed to frequency domain and is multiplied with frequency domain representation of image in an element-by-element manner. Moreover, convolution in frequency domain is just much faster than in spatial domain even for similar image and kernel sizes. 
