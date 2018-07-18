@@ -34,20 +34,19 @@ points.jpg  <br>
 <img src = "calc_camera_parameters/points.JPG" width = "600"> <br> <br>
 
 Output file: 
-~~~~
+
 result.txt  <br>
+<img src = "calc_camera_parameters/results.PNG" width = "600"> <br> <br>
 Calibration matrix: <br>
 [3759.0095, -97.234528, 1662.9592;<br>
  0, 3715.8079, 1933.791;<br>
  0, 0, 0.99999994]<br>
-~~~~
-`
+
 Rotation matrix: <br>
 [-0.70572937, 0.70612901, -0.057687514;<br>
  -0.54553491, -0.4896597, 0.68016547;<br>
  0.45203733, 0.51148331, 0.73078525]<br>
 <br>
-`
 
 Output file: <br>
 result.txt  <br>
