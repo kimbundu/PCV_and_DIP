@@ -107,17 +107,22 @@ Input files: <br>
 original.jpg <br>
 <img src = "image_restoration/original.jpg" width = "256"> <br> <br>
 Results of application of salt-and-pepper noise and gaussian noise: <br>
+noiseType_1.jpg, noiseType_2.jpg <br>
 <img src = "image_restoration/noiseType_1.jpg" width = "256">
 <img src = "image_restoration/noiseType_2.jpg" width = "256"> <br> <br>
 Results of application of averafing filter to noised images: <br>
+restorated_n1_ave.jpg, restorated_n2_ave.jpg <br>
 <img src = "image_restoration/restorated_n1_ave.jpg" width = "256">
 <img src = "image_restoration/restorated_n2_ave.jpg" width = "256"> <br> <br>
 Results of application of median filter to noised images: <br>
+restorated_n1_med.jpg, restorated_n2_med.jpg <br>
 <img src = "image_restoration/restorated_n1_med.jpg" width = "256">
 <img src = "image_restoration/restorated_n2_med.jpg" width = "256"> <br> <br>
 Results of application of bilateral filter to noised images: <br>
+restorated_n1_bil.jpg, restorated_n2_bil.jpg <br>
 <img src = "image_restoration/restorated_n1_bil.jpg" width = "256">
 <img src = "image_restoration/restorated_n2_bil.jpg" width = "256"> <br> <br>
+As a result, median filter seems to be the best choise for denoising of given images.
 
 <h1>Unsharp masking</h1>
 <p>Current exercise performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where the lower part is result of unsharp masking: <br>
