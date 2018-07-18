@@ -36,18 +36,8 @@ points.jpg  <br>
 Output file: 
 
 result.txt  <br>
-<img src = "calc_camera_parameters/results.PNG" width = "600"> <br> <br>
-Calibration matrix: <br>
-[3759.0095, -97.234528, 1662.9592;<br>
- 0, 3715.8079, 1933.791;<br>
- 0, 0, 0.99999994]<br>
-
-Rotation matrix: <br>
-[-0.70572937, 0.70612901, -0.057687514;<br>
- -0.54553491, -0.4896597, 0.68016547;<br>
- 0.45203733, 0.51148331, 0.73078525]<br>
-<br>
-
+<img src = "calc_camera_parameters/results.PNG" width = "330"> <br> <br>
+<!--
 Output file: <br>
 result.txt  <br>
 Calibration matrix: <br>
@@ -69,8 +59,7 @@ omega:	-34.9885<br>
 phi:	26.8745<br>
 kappa:	142.296<br>
 <br>
-external position:	[-71.3666, -72.8878, -66.2356]^T<br>
-
+external position:	[-71.3666, -72.8878, -66.2356]^T<br>-->
 
 <h1>Epipolar lines</h1>
 
@@ -113,9 +102,25 @@ Visualisation of the file euclidianReconstruction.asc: <br>
 </p>
 
 <h1>Image restoration</h1>
+This exercise deals with image filtering methods. In the beginning two noises are applied for an input image: salt-and-pepper noise and gaussian noise. Both degraded images are processed by 3 filters: averaging filter, median filter and bilateral filter. <br>
+Input files: <br>
+original.jpg <br>
+<img src = "image_restoration/original.jpg" width = "256"> <br> <br>
+Results of application of salt-and-pepper noise and gaussian noise: <br>
+<img src = "image_restoration/noiseType_1.jpg" width = "256">
+<img src = "image_restoration/noiseType_2.jpg" width = "256"> <br> <br>
+Results of application of averafing filter to noised images: <br>
+<img src = "image_restoration/restorated_n1_ave.jpg" width = "256">
+<img src = "image_restoration/restorated_n2_ave.jpg" width = "256"> <br> <br>
+Results of application of median filter to noised images: <br>
+<img src = "image_restoration/restorated_n1_med.jpg" width = "256">
+<img src = "image_restoration/restorated_n2_med.jpg" width = "256"> <br> <br>
+Results of application of bilateral filter to noised images: <br>
+<img src = "image_restoration/restorated_n1_bil.jpg" width = "256">
+<img src = "image_restoration/restorated_n2_bil.jpg" width = "256"> <br> <br>
 
 <h1>Unsharp masking</h1>
-<p>Current project performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where the lower part is result of unsharp masking: <br>
+<p>Current exercise performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where the lower part is result of unsharp masking: <br>
 <img src = "unsharp_masking/USM.PNG" width = "256"> <br> <br>
 
 Current exercise performs unsharp masking of several different-sized images and measures processing time. Smoothing of the initial image is done by convolution. This fact is used to compare processing time of convolution of different-sized images (256х256, 400x400, 675x675 pixels) by different-sized kernels (5x5, 15x15, 25x25, 35x35 and 45x45) in spatial and in frequency domain. Results of unsharp masking applied for degraded images on the left are shown on the right side: <br>
