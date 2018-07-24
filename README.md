@@ -87,7 +87,7 @@ snd.png   <br>
 points on two images of this object. Input file bh.dat contains 
 more than 1000 lines. Each line consists of x, y pixel coordinates of a point on the first 
 image and x, y coordinates of the same point on the second image. Input file pp.dat contains 5 lines, each line consists of x, y pixel coordinates of a point on the first image, x, y coordinates 
-of the same point on the second image and X, Y, Z coordinates of this point on the 3D object. 
+of the same point on the second image and X, Y, Z coordinates of this point on the 3D object. These 5 points are used as control points.
 Program calculates fundamental matrix and than sets projection matrix of one camera as known 
 and calculates projection matrix of the second camera. Known projection matrices lead to 
 linear triangulation. To upgrade described reconstruction from projective to euclidean, 
@@ -128,7 +128,7 @@ As a result, median filter seems to be the best choise for denoising of given im
 <p>Current exercise performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where the lower part is result of unsharp masking: <br>
 <img src = "unsharp_masking/USM.PNG" width = "256"> <br> <br>
 
-Current exercise performs unsharp masking of several different-sized images and measures processing time. Smoothing of the initial image is done by convolution. This fact is used to compare processing time of convolution of different-sized images (256х256, 400x400, 675x675 pixels) by different-sized kernels (5x5, 15x15, 25x25, 35x35 and 45x45) in spatial and in frequency domain. Results of unsharp masking applied for degraded images on the left are shown on the right side: <br>
+Operation of unsharp masking was applied to several different-sized images and processing time was also measured. Smoothing of the initial image is done by convolution. This fact is used to compare processing time of convolution of different-sized images (256х256, 400x400, 675x675 pixels) by different-sized kernels (5x5, 15x15, 25x25, 35x35 and 45x45) in spatial and in frequency domain. Results of unsharp masking applied for degraded images on the left are shown on the right side: <br>
 <img src = "unsharp_masking/result_images/degraded_orig_256.jpg" width = "256">
 <img src = "unsharp_masking/result_images/orig_256_USM_15x15_5_0.8_freqDom_enhanced.png" width = "256"> <br> <br>
 Dependency on processing time on image size and kernel size is shown on the following graphs: <br>
