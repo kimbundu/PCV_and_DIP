@@ -70,6 +70,9 @@ Input files:  <br>
 krem1.jpg, krem2.jpg <br> 
 <img src = "epipolar_lines/krem1.JPG" width = "50%"> 
 <img src = "epipolar_lines/krem2.JPG" width = "50%"> <br> <br>
+<img src = "panorama_creation/ph_left.JPG" width = "33%">
+<img src = "panorama_creation/ph_mid.JPG" width = "33%">
+<img src = "panorama_creation/ph_rig.JPG" width = "33%"> <br> <br>
 
 Output files:  <br>
 fst.png, snd.png  <br> 
@@ -98,7 +101,7 @@ Visualisation of the file euclidianReconstruction.asc: <br>
 </p>
 
 <h1>Image restoration</h1>
-This exercise deals with image filtering methods. In the beginning two noises are applied for an input image: salt-and-pepper noise and gaussian noise. Both degraded images are processed by 3 filters: averaging filter, median filter and bilateral filter. <br>
+<p>This exercise deals with image filtering methods. In the beginning two noises are applied for an input image: salt-and-pepper noise and gaussian noise. Both degraded images are processed by 3 filters: averaging filter, median filter and bilateral filter. <br>
 Input files: <br>
 original.jpg <br>
 <img src = "image_restoration/original.jpg" width = "50%"> <br> <br>
@@ -118,7 +121,7 @@ Results of application of bilateral filter to noised images: <br>
 restorated_n1_bil.jpg, restorated_n2_bil.jpg <br>
 <img src = "image_restoration/restorated_n1_bil.jpg" width = "50%">
 <img src = "image_restoration/restorated_n2_bil.jpg" width = "50%"> <br> <br>
-As a result, median filter seems to be the best choise for denoising of given images.
+As a result, median filter seems to be the best choise for denoising of given images.</p>
 
 <h1>Unsharp masking</h1>
 <p>Current exercise performs operation of unsharp masking on several degraded images. Unsharp masking is a technique of image enhancement which increases local contrast of image edges, so that image is perceived as more sharp. The technique creates a blurry copy of degraded image, subtracts it from initial degraded image, thresholds and scales the difference and then adds the result to initial degraded image. The effect is shown on the following picture, where the lower part is result of unsharp masking: <br>
