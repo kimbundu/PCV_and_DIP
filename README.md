@@ -8,9 +8,9 @@
 <p>Creation of a panorama from 3 images. Three photos of the same planar object were taken using slightly different horizontal orientation of the camera. Program performs stitching of the left image to a center one and then stitching of the right image to the result. For every stitching operation user chooses 4 pairs of matching points. From image coordinates of these points homography in 2D is calculated and applied. Resulting image is stored on the disk. <br> <br>
 Input files: <br>
 ph_left.jpg, ph_mid.jpg, ph_rig.jpg <br>
-<img src = "panorama_creation/ph_left.JPG" width = "400">
-<img src = "panorama_creation/ph_mid.JPG" width = "400">
-<img src = "panorama_creation/ph_rig.JPG" width = "400"> <br> <br>
+<img src = "panorama_creation/ph_left.JPG" width = "33%">
+<img src = "panorama_creation/ph_mid.JPG" width = "33%">
+<img src = "panorama_creation/ph_rig.JPG" width = "33%"> <br> <br>
 Output file:  <br>
 panorama.jpg  <br>
 <img src = "panorama_creation/panorama.png">
