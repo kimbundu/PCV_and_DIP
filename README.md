@@ -68,11 +68,8 @@ User chooses 8 pairs of matching points. Images with epipolar lines are shown an
 
 Input files:  <br>
 krem1.jpg, krem2.jpg <br> 
-<img src = "epipolar_lines/krem1.JPG" width = "50%"> 
-<img src = "epipolar_lines/krem2.JPG" width = "50%"> <br> <br>
-<img src = "panorama_creation/ph_left.JPG" width = "33%">
-<img src = "panorama_creation/ph_mid.JPG" width = "33%">
-<img src = "panorama_creation/ph_rig.JPG" width = "33%"> <br> <br>
+<img src = "epipolar_lines/krem1.JPG" width = "49%">
+<img src = "epipolar_lines/krem2.JPG" width = "49%"> <br> <br>
 
 Output files:  <br>
 fst.png, snd.png  <br> 
