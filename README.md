@@ -36,7 +36,7 @@ points.jpg  <br>
 Output file: 
 
 result.txt  <br>
-<img src = "calc_camera_parameters/results.PNG" width = "33%"> <br> <br>
+<img src = "calc_camera_parameters/results.PNG" width = "50%"> <br> <br>
 <!--
 Output file: <br>
 result.txt  <br>
@@ -67,17 +67,13 @@ external position:	[-71.3666, -72.8878, -66.2356]^T<br>-->
 User chooses 8 pairs of matching points. Images with epipolar lines are shown and saved.  <br> <br>
 
 Input files:  <br>
-krem1.jpg  <br> 
-<img src = "epipolar_lines/krem1.JPG" width = "50%"> <br> <br>
-
-krem2.jpg  <br>  
+krem1.jpg, krem2.jpg <br> 
+<img src = "epipolar_lines/krem1.JPG" width = "50%"> 
 <img src = "epipolar_lines/krem2.JPG" width = "50%"> <br> <br>
 
 Output files:  <br>
-fst.png  <br> 
-<img src = "epipolar_lines/fst.png" width = "50%"> <br> <br>
-
-snd.png   <br>
+fst.png, snd.png  <br> 
+<img src = "epipolar_lines/fst.png" width = "50%"> 
 <img src = "epipolar_lines/snd.png" width = "50%"> <br> <br>
 </p>
 
